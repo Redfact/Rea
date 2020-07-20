@@ -82,3 +82,5 @@ gem 'mailjet', :git => 'https://github.com/mailjet/mailjet-gem.git'
 gem 'sendgrid-ruby'
 
 gem 'imgurapi' , :git => 'https://github.com/tamvm/imgur'
+
+gem 'serviceworker-rails'
