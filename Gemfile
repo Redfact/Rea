@@ -80,3 +80,6 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 gem 'mailjet', :git => 'https://github.com/mailjet/mailjet-gem.git'
 
 gem 'imgurapi' , :git => 'https://github.com/tamvm/imgur'
+
+gem 'link_thumbnailer'
+
