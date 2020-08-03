@@ -13,6 +13,8 @@ class CreateAnnonces < ActiveRecord::Migration[5.2]
       t.integer :typeVente , default: 1
       t.boolean :AlaUne, default: false 
       t.integer :devise , default: 0 
+
+      
     end
   end
 end
