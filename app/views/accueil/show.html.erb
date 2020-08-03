@@ -44,7 +44,7 @@
                 <p class="card-subtitle mb-2 text-dark font-weight-bold">À louer</p>
                 <% end %>
                 <p class="card-subtitle mb-2 text-primary ">
-                    <%=number_to_currency(an.loyer_total, unit: an.devise, separator: ",", delimiter: ".", format: "%n %u",precision:0)%> 
+                    <%=number_to_currency(an.loyer_total, unit: an.devise.to_s, separator: ",", delimiter: ".", format: "%n %u",precision:0)%> 
                 </p>
                 <% if an.capacite > 0 %> 
                 <p class="card-subtitle mb-2 text-muted">
