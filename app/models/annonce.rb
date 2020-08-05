@@ -1,6 +1,6 @@
 class Annonce < ApplicationRecord
     before_destroy :destroy_images
-    enum typeBien: { Appartement: 0 , Maison: 1 , Terrain: 2 }
+    enum typeBien: { Appartement: 0 , Maison: 1 , Terrain: 2 , Villa: 3 , Immeuble: 4 }
     enum typeVente: { Vente: 0 , Location: 1  }
     enum devise: { Ariary: 0 , Euro: 1  }
 
@@ -33,7 +33,11 @@ class Annonce < ApplicationRecord
             when "appartement"
                 annonce.select{ |an| an.Appartement? == true}            
             when "terrain"
-                annonce.select{ |an| an.Terrain? == true}
+                annonce.select{ |an| an.Terrain? == true}            
+            when "villa"
+                annonce.select{ |an| an.Villa? == true}
+            when "immeuble"
+                annonce.select{ |an| an.Immeuble? == true}
             when "prixDesc"
                 annonce.sort_by(&:loyer_total).reverse
             when "prixAsc"

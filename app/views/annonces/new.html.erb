@@ -57,12 +57,21 @@
 
         <div class="field mt-3">
             <%= f.label'Type de bien' ,class:"font-weight-bold text-dark"%><br>
+
             <%= f.radio_button(:typeBien, "Appartement") %>
-            <%= f.label(:appartement, "Appartement",class:"text-secondary") %>
+            <%= f.label(:appartement, "Appartement",class:"text-secondary mr-2") %>
+
             <%= f.radio_button(:typeBien,"Maison") %>
-            <%= f.label(:maison, "Maison",class:"text-secondary") %>
+            <%= f.label(:maison, "Maison",class:"text-secondary mr-2") %>
+
             <%= f.radio_button(:typeBien,"Terrain") %>
-            <%= f.label(:maison, "Terrain",class:"text-secondary") %>
+            <%= f.label(:maison, "Terrain",class:"text-secondary mr-2") %>  
+
+            <%= f.radio_button(:typeBien,"Villa") %>
+            <%= f.label(:maison, "Villa",class:"text-secondary mr-2") %>            
+            
+            <%= f.radio_button(:typeBien,"Immeuble") %>
+            <%= f.label(:maison, "Immeuble",class:"text-secondary mr-2") %>
         </div>
 
         <div class="field mt-3">
