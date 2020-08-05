@@ -77,18 +77,15 @@
         </div>
       </li> 
 
-      <li class="nav-item dropdown ">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          A propos
-        </a>
-        <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-            <%= link_to 'A propos', about_path ,class:"dropdown-item text-light "%>
-            <%= link_to 'Contactez nous', contactez_nous_path ,class:"dropdown-item text-light "%>
-        </div>
-      </li>
-         
-    
+      <li class="nav-item ">
+        <%= link_to 'A propos', about_path ,class:"nav-link"%>      
+      </li>     
       
+      <li class="nav-item ">
+        <%= link_to 'Contactez nous', contactez_nous_path ,class:"nav-link"%>
+      </li>
+
+  
       <li class="nav-item">
 
         <%=form_tag( annonces_path, method: :get,class:"form-inline my-2 my-lg-0") do |f| %>
