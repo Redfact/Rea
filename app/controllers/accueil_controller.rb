@@ -1,6 +1,6 @@
 class AccueilController < ApplicationController
   def show
-    @AlaUne = Annonce.AlaUne
+    @AlaUne = Annonce.AlaUne.sort_by(&:created_at).reverse
     @sort = params[:sort]
     @secondSort = params[:secondSort]
     search = params[:search]
